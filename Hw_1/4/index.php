@@ -13,7 +13,7 @@
         <p>Start diapason:<input type="text" name = "start_ip"></p>
         <p>End diapason: <input type = "text" name = "end_ip"></p>
         <p>Check IP: <input type = "text" name = "check_ip"></p>
-        <input type="submit" valut = "Send">
+        <input type="submit" value = "Send">
 
     </form>
 </body>
