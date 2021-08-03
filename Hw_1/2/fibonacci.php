@@ -35,4 +35,17 @@ class Fibonacci
             echo ("Invalid data!");
         }
     }
+
+    public function getNumbers1 ($limit, $last1 = 0, $last2 = 1) {
+        if ($limit == 0) {
+            return 0;
+        }
+        $newValue = $last1 + $last2;
+
+        echo ($newValue."<br>");
+
+        getNumbers1(--$limit, $last2, $newValue);
+    }
+
+
 }

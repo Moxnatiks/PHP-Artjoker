@@ -99,7 +99,6 @@ class Doublemass
         }
         if ($strings == $columns) {
             $newMass =array();
-
             for ($k = 1; $k <= $columns; $k++) {
                 for ($j = 1; $j <= $columns; $j++) {
                     $newMass[$k][$j] = 0;
@@ -116,7 +115,23 @@ class Doublemass
         } else {
             echo ("Две матрицы можно умножать между собой только тогда,<br>когда количество столбцов в первой матрице совпадает с количеством строк во второй матрице.");
         }
+    }
 
+    public function deleteSC ($number) {
+        if ($number == 1) {
+            $text = "первый";
+            $mass = $this->mass1;
+        }  else {
+            $text = "второй";
+            $mass = $this->mass2;
+        }
+
+        foreach ($mass as $column) {
+            $sum = 0;
+            foreach ($column as $string){
+                $sum += $string;
+            }
+        }
     }
 
 
