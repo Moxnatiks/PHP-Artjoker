@@ -1,5 +1,5 @@
 <?php
 
 $tttt = 0;
-$r = "jrjd";
+$r = "jrjd";фыкпыу
 $q = "zsdjkfhasdfsdfsdfsddfafls";
